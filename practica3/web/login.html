@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>El pinshis LogIn</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <footer id="footer" class="wrapper">
+      <div class="inner">
+        <section>
+          <div class="box">
+            <div class="content">
+              <h2 class="align-center">Ingresa tus Datillos</h2>
+              <hr />
+              <form action="#" method="post">
+                <div class="field half first">
+                  <label for="nombre">Nombre</label>
+                  <input name="nombre" id="nombre" type="text" placeholder="Nombre">
+                </div>
+                <div class="field half">
+                  <label for="aPat">Apellido Paterno</label>
+                  <input name="aPat" id="aPat" type="text" placeholder="Apellido Materno">
+                </div>
+                <div class="field half">
+                  <label for="aMat">Apellido Materno</label>
+                  <input name="aMat" id="aMat" type="text" placeholder="Apellido Materno">
+                </div>
+                <div class="field half">
+                  <label for="email">Correo</label>
+                  <input name="email" id="email" type="text" placeholder="Correo">
+                </div>
+                <div class="field half">
+                  <label for="telefono">Telefono</label>
+                  <input name="telefono" id="telefono" type="text" placeholder="Telefono">
+                </div>
+              
+                </div>
+              </form>
+            </div>
+          </div>
+        
+        </section>
+         
+            <input type="submit" value="click" onclick="princi()">
+  </body>
+</html>
+
+<script>
+    function princi(){
+        window.location.assign("http://localhost:8080/practica3/index.html")
+    }
+</script>
