@@ -27,9 +27,6 @@ public class listaContactoPojo {
     @Column(name="lista_Contacto")
     private String lista_Contacto; 
 
-    @ManyToOne
-    @JoinColumn (name="idlista_Contacto")
-    private usuarioPojo idusuario;
     
     /**
      * @return the idlista_Contacto
@@ -59,17 +56,5 @@ public class listaContactoPojo {
         this.lista_Contacto = lista_Contacto;
     }
 
-    /**
-     * @return the idusuario
-     */
-    public usuarioPojo getIdusuario() {
-        return idusuario;
-    }
-
-    /**
-     * @param idusuario the idusuario to set
-     */
-    public void setIdusuario(usuarioPojo idusuario) {
-        this.idusuario = idusuario;
-    }
+    
 }

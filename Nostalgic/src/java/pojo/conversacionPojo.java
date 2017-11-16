@@ -26,11 +26,7 @@ public class conversacionPojo {
     @Column(name="idconversacion")
     private int idconversacion;
     
-    @Column(name="Usuario_1")
-    private int Usuario_1;
-    
-    @Column(name="Usuario_2")
-    private int Usuario_2;
+   
     
     @Column(name="Time")
     private Date Time;
@@ -65,33 +61,7 @@ public class conversacionPojo {
         this.idconversacion = idconversacion;
     }
 
-    /**
-     * @return the Usuario_1
-     */
-    public int getUsuario_1() {
-        return Usuario_1;
-    }
-
-    /**
-     * @param Usuario_1 the Usuario_1 to set
-     */
-    public void setUsuario_1(int Usuario_1) {
-        this.Usuario_1 = Usuario_1;
-    }
-
-    /**
-     * @return the Usuario_2
-     */
-    public int getUsuario_2() {
-        return Usuario_2;
-    }
-
-    /**
-     * @param Usuario_2 the Usuario_2 to set
-     */
-    public void setUsuario_2(int Usuario_2) {
-        this.Usuario_2 = Usuario_2;
-    }
+    
 
     /**
      * @return the Time
