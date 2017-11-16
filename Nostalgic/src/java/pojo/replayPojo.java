@@ -54,7 +54,9 @@ public class replayPojo {
      private usuarioPojo idusuario;
     
     
-    
+     @ManyToOne
+     @JoinColumn (name="idreplay")
+     private conversacionPojo idconversacion;
     
     
 }
