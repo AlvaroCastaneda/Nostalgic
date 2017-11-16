@@ -17,6 +17,8 @@
 
         <!-- Custom styles for this template -->
         <link href="css/freelancer.css" rel="stylesheet">
+        
+        <link href="vendor/bootstrap/js/" rel="stylesheet">
 
     </head>
 
@@ -92,26 +94,29 @@
                                 <form method="POST" action="Registro">
                                     <div class="row">
                                         <div class="col-sm-12" style="background: white; margin: 5px 0px 20px 0px;">               
-                                            <input type="text" class="form-control" name="usuario" placeholder="Nombre" >
+                                            <input type="text" class="form-control" id="usuario" placeholder="Nombre" >
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12" style="background: white;margin: 5px 0px 20px 0px;">               
-                                            <input type="text" class="form-control" name="apellidop" placeholder="Nick Name" >
+                                            <input type="text" class="form-control" id="nick" placeholder="Nick Name" >
+                                        </div>
+                                        <div class="col-sm-12" style="background: white;margin: 5px 0px 20px 0px;">               
+                                            <input type="text" class="form-control" id="telefono" placeholder="Telefono" >
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12" style="background: white;margin: 5px 0px 20px 0px;">               
-                                            <input type="text" class="form-control" name="telefono" placeholder="Correo">
+                                            <input type="text" class="form-control" id="correo" placeholder="Correo">
                                         </div>
                                         <div class="col-sm-12" style="background: white;margin: 5px 5px 20px 0px;">               
-                                            <input type="text" class="form-control" name="correo" placeholder="Password" >
+                                            <input type="text" class="form-control" id="password" placeholder="Password" >
                                         </div>
                                     </div>
                                 </form> 
                             </div>
                             <div class="modal-footer">
-                               <button type="button" class="btn btn-success btn-lg" style="margin-left: 170px;">Success</button>
+                                <button type="load"  onclick="sendDataToBack()" class="btn btn-success btn-lg" style="margin-left: 170px;">Success</button>
                             </div>
                         </div>
                     </div>
@@ -132,6 +137,7 @@
 
         <!-- Custom scripts for this template -->
         <script src="js/freelancer.min.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 

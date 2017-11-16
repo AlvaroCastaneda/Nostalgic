@@ -42,9 +42,14 @@ Contributor(s):
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.driver_class">org.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/NombreDB?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">app</property>
-    <property name="hibernate.connection.password">app</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/nostalgic?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">M09a12e93</property>
+    
+    <mapping class="pojo.usuarioPojo"></mapping>
+    <mapping class="pojo.listaContactoPojo"></mapping>
+    <mapping class="pojo.conversacionPojo"></mapping>
+    <mapping class="pojo.replayPojo"></mapping>
   </session-factory>
 </hibernate-configuration>
