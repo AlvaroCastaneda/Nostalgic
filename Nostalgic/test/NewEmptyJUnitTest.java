@@ -45,18 +45,19 @@ public class NewEmptyJUnitTest {
 
      public void hello() {
          whatsAppDao puenteUsuario =new whatsAppDao();
-         puenteUsuario.savePersona("Martin", "El martin :V", "a@q.com", "666", "qwerty", 0);
+        // puenteUsuario.savePersona("Eder", "El Eder :V", "e@q.com", "777", "juanito", 0);
          
-         usuarioPojo usuario =new usuarioPojo();
+         //System.out.println(""+puenteUsuario.getUsuarioById(1).getNombre());
          
-         usuario.setNombre("Martin");
-         usuario.setNickName("El Martin");
-         usuario.setEmail("martin@gmail.com");
-         usuario.setTelefono("54583725827385");
-         usuario.setContraseña("7hr64hf");
+      //   puenteUsuario.saveConversacion(0, 0,puenteUsuario.getUsuarioById(1)
+       //       ,puenteUsuario.getUsuarioById(1));
          
          
-        
+       
+       
+         //puenteUsuario.saveMensaje(0, "hole", 1);
+         
+         
          System.out.println("Estoy aqui");
          //personaProNuevoPablo.setNombre("yahirelbebe");
          //personita.updateById(4, personaProNuevoPablo);

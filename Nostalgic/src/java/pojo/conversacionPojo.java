@@ -19,15 +19,13 @@ import javax.persistence.Table;
  * @author edher
  */
 @Entity
-@Table (name="conversacion", catalog="")
+@Table (name="conversacion", catalog="nostalgicbueno")
 public class conversacionPojo {
     
     @Id @GeneratedValue
     @Column(name="idconversacion")
     private int idconversacion;
-    
-   
-    
+
     @Column(name="Time")
     private Date Time;
     

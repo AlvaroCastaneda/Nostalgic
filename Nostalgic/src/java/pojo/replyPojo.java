@@ -20,20 +20,19 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table (name="reply")
-public class replayPojo {
+@Table (name="reply",catalog="nostalgicbueno")
+public class replyPojo {
     
     
     @Id @GeneratedValue
     @Column (name="idreply")
-    private int idreplay;
+    private int idreply;
     
     
-    @Column (name="reply")
+    @Column (name="Reply")
     private String Reply;
  
-    @Column (name="user")
-    private int user;
+   
     
     @Column (name="Time")
     private Date Time;
@@ -55,21 +54,21 @@ public class replayPojo {
     
     
      @ManyToOne
-     @JoinColumn (name="idreplay")
+     @JoinColumn (name="idConversacion")
      private conversacionPojo idconversacion;
 
     /**
-     * @return the idreplay
+     * @return the idreply
      */
-    public int getIdreplay() {
-        return idreplay;
+    public int getIdreply() {
+        return idreply;
     }
 
     /**
-     * @param idreplay the idreplay to set
+     * @param idreply the idreply to set
      */
-    public void setIdreplay(int idreplay) {
-        this.idreplay = idreplay;
+    public void setIdreply(int idreply) {
+        this.idreply = idreply;
     }
 
     /**
@@ -84,20 +83,6 @@ public class replayPojo {
      */
     public void setReply(String Reply) {
         this.Reply = Reply;
-    }
-
-    /**
-     * @return the user
-     */
-    public int getUser() {
-        return user;
-    }
-
-    /**
-     * @param user the user to set
-     */
-    public void setUser(int user) {
-        this.user = user;
     }
 
     /**
@@ -183,6 +168,8 @@ public class replayPojo {
     public void setIdconversacion(conversacionPojo idconversacion) {
         this.idconversacion = idconversacion;
     }
+
+   
     
     
 }

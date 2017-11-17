@@ -19,7 +19,7 @@
      * @author Martin
      */
     @Entity
-    @Table(name="usuario",catalog="")
+    @Table(name="usuario",catalog="nostalgicbueno")
     public class usuarioPojo {
 
         @Id @GeneratedValue
@@ -44,7 +44,7 @@
        
 
         @ManyToOne
-        @JoinColumn (name = "lista_Contacto")
+        @JoinColumn (name = "Lista_Contacto")
         private listaContactoPojo lista_Contacto;
 
         /**

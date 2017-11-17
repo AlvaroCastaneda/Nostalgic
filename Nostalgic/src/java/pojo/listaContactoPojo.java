@@ -17,7 +17,7 @@ import javax.persistence.Table;
  * @author edher
  */
 @Entity
-@Table (name="listaContactosPojo", catalog="")
+@Table (name="lista_Contacto", catalog="nostalgicbueno")
 public class listaContactoPojo {
 
     @Id @GeneratedValue
